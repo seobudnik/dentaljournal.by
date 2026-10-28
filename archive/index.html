@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Архив номеров и каталог научных статей журнала ДенталВестник: поиск по авторам, клиническим рубрикам, онкостоматологии, терапевтической и ортопедической стоматологии.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Архив выпусков и поиск по каталогу статей — ДенталВестник</title>
+  <link rel="canonical" href="https://dentaljournal.by/archive/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,600;7..72,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css?v=20261028">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-meta">
+        <span class="topbar-badge">Электронный каталог</span>
+        <span>32 выпуска в открытом оглавлении · Полнотекстовые статьи и тематический поиск</span>
+      </div>
+      <div class="topbar-links">
+        <a href="/about/write_us/">Написать в редакцию</a>
+        <a href="/authors/rule/">Требования к статьям</a>
+        <a href="/map/">Карта сайта</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true">ДВ</span>
+        <span class="brand-text">
+          <span class="brand-title">ДенталВестник</span>
+          <span class="brand-subtitle">Стоматология и челюстно-лицевая хирургия</span>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Открыть меню">Меню</button>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="/">Главная</a>
+        <a href="/about/">О журнале</a>
+        <a class="is-active" href="/archive/">Архив</a>
+        <a href="/authors/">Авторам</a>
+        <a href="/editorial/">Редколлегия</a>
+        <a href="/news/">Новости</a>
+        <a href="/forum/">Форум</a>
+        <a href="/subscribe/">Подписка</a>
+        <a href="/advertisement/">Реклама</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-primary" href="/subscribe/">Подписка на PDF</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <a href="/">Главная</a>
+          <span class="sep">/</span>
+          <span>Архив и поиск по каталогу</span>
+        </nav>
+        <h1>Архив выпусков и поиск по каталогу публикаций</h1>
+        <p>Интерактивный указатель всех номеров журнала, годовых комплектов и избранных рецензируемых статей по стоматологии и челюстно-лицевой хирургии.</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="search-panel" aria-label="Фильтр по архиву">
+        <div class="search-panel-title">
+          <span>Фильтр по названию статьи, автору или клинической рубрике</span>
+        </div>
+        <form class="search-form js-catalog-search" action="/archive/" method="get">
+          <div class="form-field">
+            <label for="arch-q">Название или тема</label>
+            <input id="arch-q" type="text" name="q" placeholder="Например: препарирование, фотокомпозит, меланома, синус-лифтинг">
+          </div>
+          <div class="form-field">
+            <label for="arch-author">Автор</label>
+            <input id="arch-author" type="text" name="author" placeholder="Фамилия автора">
+          </div>
+          <div class="form-field">
+            <label for="arch-rubric">Рубрика</label>
+            <select id="arch-rubric" name="rubric">
+              <option value="">Все направления</option>
+              <option value="Терапевтическая стоматология">Терапевтическая стоматология</option>
+              <option value="Ортопедическая стоматология">Ортопедическая стоматология</option>
+              <option value="Имплантология">Дентальная имплантология</option>
+              <option value="Онкология в стоматологии">Онкология в стоматологии</option>
+              <option value="Челюстно-лицевая хирургия">Челюстно-лицевая хирургия</option>
+              <option value="Детская стоматология">Детская стоматология</option>
+            </select>
+          </div>
+          <button class="btn btn-navy" type="submit">Найти</button>
+        </form>
+      </section>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div id="query-banner" class="query-banner">
+          <span class="js-query-text">Результаты поиска по каталогу</span>
+          <button type="button" class="btn btn-outline js-query-reset" style="padding: 0.35rem 0.75rem; font-size: 0.8rem;">Сбросить фильтр</button>
+        </div>
+
+        <div class="section-header">
+          <div>
+            <h2>Архив по годам</h2>
+            <p>Быстрый переход к годовым оглавлениям журнала:</p>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <a class="btn btn-outline" href="/archive/2005/">2005 г.</a>
+            <a class="btn btn-outline" href="/archive/2006/">2006 г.</a>
+            <a class="btn btn-outline" href="/archive/2007/">2007 г.</a>
+            <a class="btn btn-outline" href="/archive/2008/">2008 г.</a>
+            <a class="btn btn-outline" href="/archive/2009/">2009 г.</a>
+          </div>
+        </div>
+
+        <h2 style="margin-top: 2rem;">Избранные полнотекстовые публикации и тематические обзоры</h2>
+        <div class="cards-list" style="margin-bottom: 2.5rem;">
+          <article class="article-card" data-searchable>
+            <div class="article-meta">
+              <span class="badge">Терапевтическая стоматология</span>
+              <span>Выпуск <a href="/archive/67/">№67 (2009 г., №1)</a></span>
+            </div>
+            <h3><a href="/archive/67/102.html">Клинико-лабораторная оценка качества фотокомпозитных реставраций жевательной группы зубов, выполненных с применением различных методик полимеризации</a></h3>
+            <p class="article-authors">Автор: Манюк О. Н.</p>
+            <p class="article-abstract">Сравнительный анализ краевого прилегания, микротвердости и клинической выживаемости реставраций боковых зубов при направленной и ступенчатой фотополимеризации.</p>
+          </article>
+
+          <article class="article-card" data-searchable>
+            <div class="article-meta">
+              <span class="badge">Терапевтическая стоматология</span>
+              <span>Выпуск <a href="/archive/94/">№94 (2011 г., №1)</a></span>
+            </div>
+            <h3><a href="/archive/94/607.html">Актуальные аспекты микроинвазивного препарирования кариозных полостей</a></h3>
+            <p class="article-authors">Авторы: Терещенко Е. Н., Мальковец О. Г., Терещенко М. А.</p>
+            <p class="article-abstract">Клиническое обоснование применения специализированных дентальных вращающихся инструментов для селективного удаления кариозного дентина.</p>
+          </article>
+
+          <article class="article-card" data-searchable>
+            <div class="article-meta">
+              <span class="badge badge-amber">Онкология в стоматологии</span>
+              <span>Рубрика <a href="/20/">/20/</a> · Выпуск <a href="/archive/90/">№90</a></span>
+            </div>
+            <h3><a href="/20/">Онкоскрининг в стоматологии: Меланома (клиника и диагностика), Рак губы, Рак слизистой оболочки полости рта, Базально-клеточный рак кожи</a></h3>
+            <p class="article-authors">Авторы: Березовский И. М., Астахов В. С., Дорофеева М. Н.</p>
+            <p class="article-abstract">Цикл клинических лекций по ранней дифференциальной диагностике злокачественных новообразований челюстно-лицевой области, красной каймы губ и слизистой оболочки рта на амбулаторном приеме.</p>
+          </article>
+        </div>
+
+        <h2>Все номера журнала в каталоге (выпуски №67 – №100)</h2>
+        <div class="issues-grid">
+          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2005 г. · Том VI</span>
+              <h3><a href="/archive/84/">Выпуск №84 (№ 1 (18))</a></h3>
+              <p>Профилактическая стоматология и кариесология</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/84/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2005 г. · Том VI</span>
+              <h3><a href="/archive/85/">Выпуск №85 (№ 2 (19))</a></h3>
+              <p>Ортопедическая реабилитация и материаловедение</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/85/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2005 г. · Том VI</span>
+              <h3><a href="/archive/86/">Выпуск №86 (№ 4 (21))</a></h3>
+              <p>Челюстно-лицевая хирургия и травматология</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/86/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2006 г. · Том VII</span>
+              <h3><a href="/archive/81/">Выпуск №81 (№ 1 (22))</a></h3>
+              <p>Эндодонтические протоколы и обтурация каналов</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/81/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2006 г. · Том VII</span>
+              <h3><a href="/archive/82/">Выпуск №82 (№ 2 (23))</a></h3>
+              <p>Детская стоматология и ортодонтическая профилактика</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/82/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2006 г. · Том VII</span>
+              <h3><a href="/archive/83/">Выпуск №83 (№ 3 (24))</a></h3>
+              <p>Пародонтология и патология слизистой оболочки</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/83/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2006 г. · Том VII</span>
+              <h3><a href="/archive/75/">Выпуск №75 (№ 4 (25))</a></h3>
+              <p>Дентальная имплантология и костная пластика</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/75/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2007 г. · Том VIII</span>
+              <h3><a href="/archive/77/">Выпуск №77 (№ 1 (26))</a></h3>
+              <p>Прямая эстетическая реставрация зубов</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/77/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2007 г. · Том VIII</span>
+              <h3><a href="/archive/78/">Выпуск №78 (№ 2 (27))</a></h3>
+              <p>Микропротезирование и штифтовые конструкции</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/78/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2007 г. · Том VIII</span>
+              <h3><a href="/archive/79/">Выпуск №79 (№ 3 (28))</a></h3>
+              <p>Амбулаторная хирургическая стоматология</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/79/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2007 г. · Том VIII</span>
+              <h3><a href="/archive/80/">Выпуск №80 (№ 4 (29))</a></h3>
+              <p>Клинико-лабораторная диагностика кариеса, ортодонтия и имплантология</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/80/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2008 г. · Том IX</span>
+              <h3><a href="/archive/70/">Выпуск №70 (№ 1 (30))</a></h3>
+              <p>Адгезивные системы и биомиметика</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/70/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2008 г. · Том IX</span>
+              <h3><a href="/archive/71/">Выпуск №71 (№ 2 (31))</a></h3>
+              <p>Гнатология и функциональная окклюзия</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/71/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2008 г. · Том IX</span>
+              <h3><a href="/archive/72/">Выпуск №72 (№ 3 (32))</a></h3>
+              <p>Воспалительные заболевания челюстно-лицевой области</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/72/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2008 г. · Том IX</span>
+              <h3><a href="/archive/73/">Выпуск №73 (№ 4 (33))</a></h3>
+              <p>Профилактика осложнений в дентальной имплантологии</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/73/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2009 г. · Том X</span>
+              <h3><a href="/archive/67/">Выпуск №67 (№ 1 (34))</a></h3>
+              <p>Фотокомпозитные реставрации жевательной группы зубов и полимеризация</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/67/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2009 г. · Том X</span>
+              <h3><a href="/archive/68/">Выпуск №68 (№ 2 (35))</a></h3>
+              <p>Комплексное лечение болезней периодонта</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/68/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2009 г. · Том X</span>
+              <h3><a href="/archive/69/">Выпуск №69 (№ 3 (36))</a></h3>
+              <p>Цельнокерамические конструкции и CAD/CAM</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/69/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2009 г. · Том X</span>
+              <h3><a href="/archive/87/">Выпуск №87 (№ 4 (37))</a></h3>
+              <p>Междисциплинарная стоматологическая реабилитация</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/87/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2010 г. · Том XI</span>
+              <h3><a href="/archive/88/">Выпуск №88 (№ 1 (38))</a></h3>
+              <p>Организация стоматологической помощи и эпидемиология</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/88/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2010 г. · Том XI</span>
+              <h3><a href="/archive/89/">Выпуск №89 (№ 2 (39))</a></h3>
+              <p>Хирургическая стоматология и профилактика альвеолита</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/89/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2010 г. · Том XI</span>
+              <h3><a href="/archive/90/">Выпуск №90 (№ 3 (40))</a></h3>
+              <p>Онкостоматология и ранняя диагностика опухолей полости рта</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/90/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2010 г. · Том XI</span>
+              <h3><a href="/archive/91/">Выпуск №91 (№ 4 (41))</a></h3>
+              <p>Костная аугментация и сохранение объема альвеолярной лунки</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/91/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2011 г. · Том XII</span>
+              <h3><a href="/archive/92/">Выпуск №92 (№ 1 (42))</a></h3>
+              <p>Поддерживающая терапия в пародонтологии и имплантологии</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/92/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2011 г. · Том XII</span>
+              <h3><a href="/archive/93/">Выпуск №93 (№ 2 (43))</a></h3>
+              <p>Реминерализующая терапия и неинвазивное лечение кариеса</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/93/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2011 г. · Том XII</span>
+              <h3><a href="/archive/94/">Выпуск №94 (№ 1 (спецвыпуск 94))</a></h3>
+              <p>Микроинвазивное препарирование, CAD/CAM-керамика и реконструктивная ЧЛХ</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/94/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2011 г. · Том XII</span>
+              <h3><a href="/archive/95/">Выпуск №95 (№ 2 (95))</a></h3>
+              <p>Менеджмент мягких тканей вокруг имплантатов и челюстно-лицевое протезирование</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/95/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2011 г. · Том XII</span>
+              <h3><a href="/archive/96/">Выпуск №96 (№ 3 (96))</a></h3>
+              <p>Модульные технологии моделирования зубов и эстетика</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/96/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2011 г. · Том XII</span>
+              <h3><a href="/archive/97/">Выпуск №97 (№ 4 (97))</a></h3>
+              <p>Эндодонтия, остеосинтез нижней челюсти и синус-лифтинг</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/97/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2012 г. · Том XIII</span>
+              <h3><a href="/archive/98/">Выпуск №98 (№ 1 (98))</a></h3>
+              <p>Цифровая окклюзиограмма и внутриротовое сканирование</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/98/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2012 г. · Том XIII</span>
+              <h3><a href="/archive/99/">Выпуск №99 (№ 2 (99))</a></h3>
+              <p>Лазерные технологии в хирургической и терапевтической стоматологии</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/99/">Содержание номера →</a>
+          </article>          <article class="issue-card" data-searchable>
+            <div>
+              <span class="issue-year">2012 г. · Том XIII</span>
+              <h3><a href="/archive/100/">Выпуск №100 (№ 3 (100, юбилейный))</a></h3>
+              <p>Итоги клинических исследований и перспективы доказательной стоматологии</p>
+            </div>
+            <a class="btn btn-outline" href="/archive/100/">Содержание номера →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© ДенталВестник (dentaljournal.by), 2005–<span id="year">2026</span>.</span>
+        <span><a href="/subscribe/" style="color:#99f6e4;">Подписка на PDF</a> · <a href="/map/" style="color:#99f6e4;">Карта сайта</a></span>
+      </div>
+    </div>
+  </footer>
+  <script src="/script.js"></script>
+</body>
+</html>
