@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ДенталВестник — научно-практическое обозрение по стоматологии и ЧЛХ</title>
+    <link>https://dentaljournal.by/</link>
+    <description>Рецензируемые клинические статьи, протоколы лечения и анонсы стоматологических конгрессов Беларуси</description>
+    <language>ru</language>
+    <atom:link href="https://dentaljournal.by/rss/dent_rus.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Научно-практический тур в Пекин и Токио: стоматологическая выставка Sino-Dental и клинические центры Японии</title>
+      <link>https://dentaljournal.by/news/258.html</link>
+      <guid>https://dentaljournal.by/news/258.html</guid>
+      <pubDate>Thu, 06 Mar 2025 10:00:00 +0300</pubDate>
+      <description>Образовательный маршрут для врачей-стоматологов: экспозиция CNCC в Пекине и знакомство с японскими протоколами микроскопной эндодонтии.</description>
+    </item>
+    <item>
+      <title>Деловая поездка белорусских стоматологов на международную выставку в Пекине</title>
+      <link>https://dentaljournal.by/news/257.html</link>
+      <guid>https://dentaljournal.by/news/257.html</guid>
+      <pubDate>Thu, 06 Mar 2025 09:00:00 +0300</pubDate>
+      <description>Профессиональная программа посещения выставки Sino-Dental в Пекине для главных врачей, ортопедов и хирургов-имплантологов.</description>
+    </item>
+    <item>
+      <title>Sino-Dental 2024: обзор ключевых премьер международной стоматологической выставки</title>
+      <link>https://dentaljournal.by/news/256.html</link>
+      <guid>https://dentaljournal.by/news/256.html</guid>
+      <pubDate>Thu, 11 Apr 2024 12:00:00 +0300</pubDate>
+      <description>Цифровые CAD/CAM-комплексы, интраоральные сканеры и биоматериалы на главной азиатской выставке стоматологии.</description>
+    </item>
+    <item>
+      <title>Микроинвазивные протоколы препарирования кариозных полостей: сохранение интактного дентина</title>
+      <link>https://dentaljournal.by/archive/94/607.html</link>
+      <guid>https://dentaljournal.by/archive/94/607.html</guid>
+      <pubDate>Wed, 15 Jan 2025 10:00:00 +0300</pubDate>
+      <description>Клиническое обоснование применения специализированных твердосплавных и полимерных ротационных инструментов при селективном удалении кариозного дентина.</description>
+    </item>
+    <item>
+      <title>Клинико-лабораторная оценка фотокомпозитных реставраций жевательной группы зубов</title>
+      <link>https://dentaljournal.by/archive/67/102.html</link>
+      <guid>https://dentaljournal.by/archive/67/102.html</guid>
+      <pubDate>Tue, 10 Dec 2024 10:00:00 +0300</pubDate>
+      <description>Сравнительный анализ краевого прилегания и микротвердости реставраций боковых зубов при направленной и импульсной фотополимеризации.</description>
+    </item>
+  </channel>
+</rss>

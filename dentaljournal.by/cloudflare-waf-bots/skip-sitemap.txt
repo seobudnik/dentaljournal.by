@@ -1,0 +1,1 @@
+(http.request.uri.path eq "/sitemap.xml") or (http.request.uri.path eq "/sitemap.xml.gz") or (ends_with(http.request.uri.path, "/sitemap.xml"))
